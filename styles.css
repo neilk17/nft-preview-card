@@ -1,0 +1,72 @@
+:root {
+    --very-dark-blue1:hsl(217, 54%, 11%);
+    --very-dark-blue2: hsl(216, 50%, 16%);
+    --very-dark-blue3: hsl(216, 32%, 27%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+    font-size: 18px;
+}
+body {
+    margin: 0;
+    background-color: var(--very-dark-blue1);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Outfit', sans-serif;
+    align-items: center;
+}
+#main {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--soft-blue);
+}
+h1 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+p {
+    color: var(--soft-blue);
+    font-size: 0.75rem;
+}
+.attribution { color: white; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.container {
+    margin: 3rem 1rem;
+    background-color: var(--very-dark-blue2);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    max-width: 300px;
+}
+.price {
+    color: var(--cyan);
+}
+.price img {
+    width: 0.5rem;
+}
+.acknowledgement {
+    display: flex;
+    gap: 0.5rem;
+}
+.acknowledgement img {
+    border: 1px solid white;
+    border-radius: 50%;
+    max-width: 12%;
+}
+.info {
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.time p {
+    display: inline;
+}
+.name {
+    color: white;
+}
