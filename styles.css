@@ -7,6 +7,17 @@
     --white: hsl(0, 0%, 100%);
     font-size: 18px;
 }
+a {
+    color: inherit; /* blue colors for links too */
+    /* text-decoration: inherit; */
+}
+a:hover {
+    color: var(--cyan);
+}
+button {
+    margin: none;
+    padding: none;
+}
 body {
     margin: 0;
     background-color: var(--very-dark-blue1);
@@ -14,10 +25,6 @@ body {
     flex-direction: column;
     font-family: 'Outfit', sans-serif;
     align-items: center;
-}
-#main {
-    width: 100%;
-    border-radius: 0.5rem;
 }
 hr {
     border: 0;
@@ -49,13 +56,18 @@ p {
     width: 0.5rem;
 }
 .acknowledgement {
+    border-top: 1px solid var(--soft-blue);
+    margin-top: 1rem;
+    padding-top: 1rem;
     display: flex;
     gap: 0.5rem;
 }
 .acknowledgement img {
+    max-width: 2rem; 
+    max-height: 2rem;
     border: 1px solid white;
     border-radius: 50%;
-    max-width: 12%;
+    /* max-width: 12%; */
 }
 .info {
     align-items: baseline;
@@ -69,4 +81,30 @@ p {
 }
 .name {
     color: white;
+}
+.name:hover {
+    color: var(--cyan);
+}
+.nft-container {
+    position: relative;
+}
+.nft-container:hover .main {
+    opacity: 0.3;
+}
+.nft-container:hover .overlay {
+    opacity: 0.5;
+}
+.main {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
